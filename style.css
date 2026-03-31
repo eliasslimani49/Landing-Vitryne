@@ -1,0 +1,27 @@
+.logo-full{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.logo-full .wordmark{
+  display:flex;
+  align-items:baseline;
+}
+
+.logo-full .wordmark span{
+  font-family:'Instrument Serif', serif;
+  font-weight:400;
+  font-size:24px;
+  color:#1A1A1A;
+}
+
+.logo-full .wordmark em{
+  font-style:normal;
+  color:#B8976A;
+  font-family:'Instrument Serif', serif;
+  font-size:28px;
+  line-height:0;
+}
+

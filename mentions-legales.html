@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales — Vitryne</title>
+<meta name="description" content="Mentions légales de Vitryne, la plateforme de réservation pour les professionnels du service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A1A1A'/%3E%3Cpath d='M8.5 8 L11 8 Q16 22.5 16 22.5 Q16 22.5 21 8 L23.5 8 L17.2 25.5 Q16 28.5 16 28.5 Q16 28.5 14.8 25.5 Z' fill='%23FDFCFA'/%3E%3Ccircle cx='16' cy='27' r='1.4' fill='%23B8976A'/%3E%3C/svg%3E">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --charcoal:#1A1A1A;--gold:#B8976A;--gold-light:#C9AB82;--gold-glow:rgba(184,151,106,0.2);
+  --cream:#FDFCFA;--white:#FFFFFF;--warm-bg:#F8F6F2;
+  --text-primary:#1A1A1A;--text-secondary:#666666;--text-tertiary:#999999;
+  --border:#E8E4DF;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;
+  --font-display:'Instrument Serif',Georgia,serif;--font-body:'DM Sans',sans-serif;
+  --ease-out-expo:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--text-primary);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;font-family:inherit;background:none}
+ul{list-style:none}
+
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ── NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0;transition:all .4s var(--ease-out-expo);background:rgba(253,252,250,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.05)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 24px;height:64px}
+.nav-brand{display:flex;align-items:center;gap:10px;transition:transform .3s var(--ease-out-expo)}
+.nav-brand:hover{transform:scale(1.03)}
+.nav-brand-icon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#1A1A1A,#444);display:flex;align-items:center;justify-content:center}
+.nav-brand-icon span{color:#fff;font-size:15px;font-weight:700}
+.nav-brand-text{font-weight:700;font-size:18px;color:var(--charcoal);letter-spacing:-.01em}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:#555;transition:color .25s}
+.nav-links a:hover{color:var(--charcoal)}
+.nav-right{display:flex;gap:10px;align-items:center}
+.btn-ghost{font-size:14px;font-weight:500;color:#555;padding:8px 16px;transition:color .25s}
+.btn-ghost:hover{color:var(--charcoal)}
+.btn-nav{font-size:13px;font-weight:600;color:#fff;background:var(--charcoal);padding:9px 20px;border-radius:var(--r-md);transition:all .3s var(--ease-out-expo)}
+.btn-nav:hover{background:#333;transform:translateY(-1px);box-shadow:0 4px 16px rgba(26,26,26,.2)}
+@media(max-width:768px){.nav-links{display:none}.btn-ghost{display:none}}
+
+/* ── PAGE HEADER ── */
+.legal-header{padding:120px 0 56px;background:var(--cream);border-bottom:1px solid var(--border)}
+.legal-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:600;color:var(--text-tertiary);letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.legal-header h1{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--charcoal);margin-bottom:12px;letter-spacing:-.02em}
+.legal-header-meta{font-size:13.5px;color:var(--text-tertiary)}
+.legal-header-meta strong{color:var(--gold);font-weight:600}
+
+/* ── LAYOUT ── */
+.legal-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;padding:64px 0 96px;align-items:start}
+@media(max-width:900px){.legal-layout{grid-template-columns:1fr;gap:32px}}
+
+/* ── TOC ── */
+.legal-toc{position:sticky;top:88px}
+.legal-toc-title{font-size:11px;font-weight:700;color:var(--text-tertiary);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.legal-toc-list{display:flex;flex-direction:column;gap:4px}
+.legal-toc-list a{font-size:13.5px;color:var(--text-secondary);padding:6px 12px;border-radius:var(--r-sm);transition:all .2s;border-left:2px solid transparent}
+.legal-toc-list a:hover{color:var(--charcoal);background:var(--warm-bg);border-left-color:var(--gold)}
+.legal-toc-list a.active{color:var(--charcoal);background:var(--warm-bg);border-left-color:var(--gold);font-weight:500}
+@media(max-width:900px){.legal-toc{position:static;background:var(--warm-bg);border-radius:var(--r-lg);padding:20px}}
+
+/* ── ARTICLE ── */
+.legal-article{min-width:0}
+.legal-section{margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid var(--border)}
+.legal-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+
+.legal-section h2{font-family:var(--font-display);font-size:1.5rem;font-weight:400;color:var(--charcoal);margin-bottom:20px;letter-spacing:-.01em;display:flex;align-items:center;gap:12px}
+.legal-section h2 .section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--warm-bg);border:1px solid var(--border);font-family:var(--font-body);font-size:12px;font-weight:600;color:var(--text-tertiary);flex-shrink:0}
+
+.legal-section h3{font-size:15px;font-weight:600;color:var(--charcoal);margin:24px 0 10px}
+.legal-section p{font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:14px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul{margin:10px 0 14px 0;display:flex;flex-direction:column;gap:8px}
+.legal-section ul li{font-size:15px;color:var(--text-secondary);line-height:1.7;padding-left:20px;position:relative}
+.legal-section ul li::before{content:'–';position:absolute;left:0;color:var(--gold)}
+.legal-section a{color:var(--charcoal);font-weight:500;border-bottom:1px solid var(--border);transition:border-color .2s}
+.legal-section a:hover{border-bottom-color:var(--charcoal)}
+
+/* placeholder style */
+.placeholder{background:var(--warm-bg);border:1px dashed var(--border);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:var(--text-tertiary);font-style:italic}
+
+/* ── FOOTER ── */
+footer{background:var(--cream);border-top:1px solid var(--border);padding:48px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand-name{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-brand-icon{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1A1A1A,#444);display:flex;align-items:center;justify-content:center}
+.footer-brand-icon span{color:#fff;font-size:13px;font-weight:700}
+.footer-brand-text{font-weight:700;font-size:16px;color:var(--charcoal)}
+.footer-brand p{font-size:13.5px;color:var(--text-tertiary);line-height:1.65;max-width:280px}
+.footer-col h4{font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:16px}
+.footer-col a{display:block;font-size:13.5px;color:var(--text-tertiary);margin-bottom:10px;transition:all .3s var(--ease-out-expo)}
+.footer-col a:hover{color:var(--charcoal);transform:translateX(3px)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12.5px;color:var(--text-tertiary)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr;gap:24px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon"><span>V</span></div>
+      <span class="nav-brand-text">Vitryne</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#benefits">Fonctionnalités</a>
+      <a href="index.html#pricing">Tarifs</a>
+      <a href="index.html#how">Comment ça marche</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="btn-ghost">Connexion</a>
+      <a href="index.html#signup" class="btn-nav">Essayer gratuitement</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="legal-header">
+  <div class="container">
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Légal</div>
+    <h1>Mentions légales</h1>
+    <p class="legal-header-meta">Dernière mise à jour : <strong>Janvier 2026</strong></p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="legal-layout">
+
+    <!-- TOC -->
+    <aside class="legal-toc">
+      <div class="legal-toc-title">Sommaire</div>
+      <nav class="legal-toc-list">
+        <a href="#editeur">Éditeur du site</a>
+        <a href="#hebergement">Hébergement</a>
+        <a href="#propriete">Propriété intellectuelle</a>
+        <a href="#responsabilite">Responsabilité</a>
+        <a href="#donnees">Données personnelles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="legal-article">
+
+      <div class="legal-section" id="editeur">
+        <h2><span class="section-num">1</span>Éditeur du site</h2>
+        <p>Le site <strong>vitryne.fr</strong> est édité par :</p>
+        <ul>
+          <li><strong>Raison sociale :</strong> <span class="placeholder">[ Nom de la société / SIREN / forme juridique ]</span></li>
+          <li><strong>Siège social :</strong> <span class="placeholder">[ Adresse complète ]</span></li>
+          <li><strong>Capital social :</strong> <span class="placeholder">[ Montant en euros ]</span></li>
+          <li><strong>SIRET :</strong> <span class="placeholder">[ Numéro SIRET ]</span></li>
+          <li><strong>TVA intracommunautaire :</strong> <span class="placeholder">[ Numéro de TVA ]</span></li>
+          <li><strong>Directeur de la publication :</strong> <span class="placeholder">[ Nom et prénom ]</span></li>
+          <li><strong>Contact :</strong> <a href="mailto:contact@vitryne.fr">contact@vitryne.fr</a></li>
+        </ul>
+      </div>
+
+      <div class="legal-section" id="hebergement">
+        <h2><span class="section-num">2</span>Hébergement</h2>
+        <p>Le site est hébergé par :</p>
+        <ul>
+          <li><strong>Prestataire :</strong> <span class="placeholder">[ Nom de l'hébergeur ]</span></li>
+          <li><strong>Adresse :</strong> <span class="placeholder">[ Adresse de l'hébergeur ]</span></li>
+          <li><strong>Site web :</strong> <span class="placeholder">[ URL de l'hébergeur ]</span></li>
+        </ul>
+        <p>Les données sont stockées et traitées au sein de l'Union européenne, conformément au Règlement Général sur la Protection des Données (RGPD).</p>
+      </div>
+
+      <div class="legal-section" id="propriete">
+        <h2><span class="section-num">3</span>Propriété intellectuelle</h2>
+        <p>L'ensemble des éléments constituant ce site (textes, graphiques, logiciels, photographies, images, sons, plans, noms, logos, marques, créations et œuvres protégeables diverses) sont la propriété exclusive de Vitryne ou de ses partenaires.</p>
+        <p>Toute reproduction, représentation, modification, publication, transmission, dénaturation, totale ou partielle du site ou de son contenu, par quelque procédé que ce soit, et sur quelque support que ce soit est interdite sans l'autorisation écrite préalable de Vitryne.</p>
+        <p>Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
+      </div>
+
+      <div class="legal-section" id="responsabilite">
+        <h2><span class="section-num">4</span>Responsabilité</h2>
+        <p>Les informations contenues sur ce site sont aussi précises que possible et le site est périodiquement remis à jour, mais peut toutefois contenir des inexactitudes, des omissions ou des lacunes. Si vous constatez une erreur, merci de nous la signaler par email.</p>
+        <p>Vitryne ne peut être tenu responsable de l'utilisation et de l'interprétation de l'information contenue dans ce site. Vitryne n'est pas non plus responsable des problèmes informatiques, de la perte éventuelle de données ou de tout autre inconvénient lié à l'utilisation du site.</p>
+        <p>Les liens hypertextes mis en place dans le cadre du présent site internet en direction d'autres ressources présentes sur le réseau internet ne sauraient engager la responsabilité de Vitryne.</p>
+      </div>
+
+      <div class="legal-section" id="donnees">
+        <h2><span class="section-num">5</span>Données personnelles</h2>
+        <p>Vitryne s'engage à ce que la collecte et le traitement de vos données, effectués à partir du site <strong>vitryne.fr</strong>, soient conformes au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.</p>
+        <p>Pour toute information relative au traitement de vos données personnelles, consultez notre <a href="confidentialite.html">Politique de confidentialité</a>.</p>
+        <p>Conformément à la réglementation en vigueur, vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité et d'opposition concernant les données vous concernant. Pour exercer ces droits, contactez-nous à <a href="mailto:privacy@vitryne.fr">privacy@vitryne.fr</a>.</p>
+      </div>
+
+      <div class="legal-section" id="contact">
+        <h2><span class="section-num">6</span>Contact</h2>
+        <p>Pour toute question relative au présent site ou aux présentes mentions légales, vous pouvez nous contacter :</p>
+        <ul>
+          <li>Par email : <a href="mailto:contact@vitryne.fr">contact@vitryne.fr</a></li>
+          <li>Par courrier : <span class="placeholder">[ Adresse postale ]</span></li>
+        </ul>
+      </div>
+
+    </article>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <div class="footer-brand-icon"><span>V</span></div>
+          <span class="footer-brand-text">Vitryne</span>
+        </div>
+        <p>La plateforme de réservation et de pilotage pour les professionnels du service sur rendez-vous.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <a href="index.html#benefits">Fonctionnalités</a>
+        <a href="index.html#pricing">Tarifs</a>
+        <a href="index.html#how">Comment ça marche</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ressources</h4>
+        <a href="#">Guide de démarrage</a>
+        <a href="#">Centre d'aide</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="cgv.html">CGV</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vitryne. Tous droits réservés.</p>
+      <p>Hébergé en Europe 🇪🇺 · Conforme RGPD</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Active TOC link on scroll
+const sections = document.querySelectorAll('.legal-section[id]');
+const tocLinks = document.querySelectorAll('.legal-toc-list a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector('.legal-toc-list a[href="#' + entry.target.id + '"]');
+      if (link) link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

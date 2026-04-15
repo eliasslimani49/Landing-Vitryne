@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "landing",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8090", "--directory", "/Users/eliasslimani/Code/projets/ma-landing"],
-      "port": 8090
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "4321", "/Users/jules/Desktop/Landing-Vitryne"],
+      "port": 4321
     }
   ]
 }

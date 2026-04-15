@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales de Vente — Vitryne</title>
+<meta name="description" content="Conditions Générales de Vente de Vitryne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A1A1A'/%3E%3Cpath d='M8.5 8 L11 8 Q16 22.5 16 22.5 Q16 22.5 21 8 L23.5 8 L17.2 25.5 Q16 28.5 16 28.5 Q16 28.5 14.8 25.5 Z' fill='%23FDFCFA'/%3E%3Ccircle cx='16' cy='27' r='1.4' fill='%23B8976A'/%3E%3C/svg%3E">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --charcoal:#1A1A1A;--gold:#B8976A;--gold-light:#C9AB82;--gold-glow:rgba(184,151,106,0.2);
+  --cream:#FDFCFA;--white:#FFFFFF;--warm-bg:#F8F6F2;
+  --text-primary:#1A1A1A;--text-secondary:#666666;--text-tertiary:#999999;
+  --border:#E8E4DF;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;
+  --font-display:'Instrument Serif',Georgia,serif;--font-body:'DM Sans',sans-serif;
+  --ease-out-expo:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--text-primary);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;font-family:inherit;background:none}
+ul{list-style:none}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(253,252,250,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.05)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 24px;height:64px}
+.nav-brand{display:flex;align-items:center;gap:10px;transition:transform .3s var(--ease-out-expo)}
+.nav-brand:hover{transform:scale(1.03)}
+.nav-brand-icon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#1A1A1A,#444);display:flex;align-items:center;justify-content:center}
+.nav-brand-icon span{color:#fff;font-size:15px;font-weight:700}
+.nav-brand-text{font-weight:700;font-size:18px;color:var(--charcoal);letter-spacing:-.01em}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:#555;transition:color .25s}
+.nav-links a:hover{color:var(--charcoal)}
+.nav-right{display:flex;gap:10px;align-items:center}
+.btn-ghost{font-size:14px;font-weight:500;color:#555;padding:8px 16px;transition:color .25s}
+.btn-ghost:hover{color:var(--charcoal)}
+.btn-nav{font-size:13px;font-weight:600;color:#fff;background:var(--charcoal);padding:9px 20px;border-radius:var(--r-md);transition:all .3s var(--ease-out-expo)}
+.btn-nav:hover{background:#333;transform:translateY(-1px);box-shadow:0 4px 16px rgba(26,26,26,.2)}
+@media(max-width:768px){.nav-links{display:none}.btn-ghost{display:none}}
+
+/* PAGE HEADER */
+.legal-header{padding:120px 0 56px;background:var(--cream);border-bottom:1px solid var(--border)}
+.legal-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:600;color:var(--text-tertiary);letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.legal-header h1{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--charcoal);margin-bottom:12px;letter-spacing:-.02em}
+.legal-header-meta{font-size:13.5px;color:var(--text-tertiary)}
+.legal-header-meta strong{color:var(--gold);font-weight:600}
+
+/* LAYOUT */
+.legal-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;padding:64px 0 96px;align-items:start}
+@media(max-width:900px){.legal-layout{grid-template-columns:1fr;gap:32px}}
+
+/* TOC */
+.legal-toc{position:sticky;top:88px}
+.legal-toc-title{font-size:11px;font-weight:700;color:var(--text-tertiary);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.legal-toc-list{display:flex;flex-direction:column;gap:4px}
+.legal-toc-list a{font-size:13.5px;color:var(--text-secondary);padding:6px 12px;border-radius:var(--r-sm);transition:all .2s;border-left:2px solid transparent}
+.legal-toc-list a:hover{color:var(--charcoal);background:var(--warm-bg);border-left-color:var(--gold)}
+.legal-toc-list a.active{color:var(--charcoal);background:var(--warm-bg);border-left-color:var(--gold);font-weight:500}
+@media(max-width:900px){.legal-toc{position:static;background:var(--warm-bg);border-radius:var(--r-lg);padding:20px}}
+
+/* ARTICLE */
+.legal-article{min-width:0}
+.legal-section{margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid var(--border)}
+.legal-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.legal-section h2{font-family:var(--font-display);font-size:1.5rem;font-weight:400;color:var(--charcoal);margin-bottom:20px;letter-spacing:-.01em;display:flex;align-items:center;gap:12px}
+.legal-section h2 .section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--warm-bg);border:1px solid var(--border);font-family:var(--font-body);font-size:12px;font-weight:600;color:var(--text-tertiary);flex-shrink:0}
+.legal-section h3{font-size:15px;font-weight:600;color:var(--charcoal);margin:24px 0 10px}
+.legal-section p{font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:14px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul{margin:10px 0 14px 0;display:flex;flex-direction:column;gap:8px}
+.legal-section ul li{font-size:15px;color:var(--text-secondary);line-height:1.7;padding-left:20px;position:relative}
+.legal-section ul li::before{content:'–';position:absolute;left:0;color:var(--gold)}
+.legal-section a{color:var(--charcoal);font-weight:500;border-bottom:1px solid var(--border);transition:border-color .2s}
+.legal-section a:hover{border-bottom-color:var(--charcoal)}
+.placeholder{background:var(--warm-bg);border:1px dashed var(--border);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:var(--text-tertiary);font-style:italic;display:block;margin:8px 0}
+
+/* PRICING TABLE */
+.pricing-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.pricing-table th{text-align:left;padding:10px 14px;background:var(--warm-bg);border:1px solid var(--border);font-weight:600;color:var(--charcoal)}
+.pricing-table td{padding:10px 14px;border:1px solid var(--border);color:var(--text-secondary);vertical-align:top}
+.pricing-table tr:hover td{background:rgba(184,151,106,0.03)}
+.price-tag{font-weight:600;color:var(--charcoal)}
+
+/* INFO BOX */
+.legal-info{background:rgba(184,151,106,0.06);border:1px solid rgba(184,151,106,0.2);border-radius:var(--r-md);padding:16px 20px;margin:16px 0;display:flex;gap:12px;align-items:flex-start}
+.legal-info-icon{font-size:16px;flex-shrink:0;margin-top:2px}
+.legal-info p{margin:0;font-size:14px;color:var(--text-secondary);line-height:1.7}
+
+/* FOOTER */
+footer{background:var(--cream);border-top:1px solid var(--border);padding:48px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand-name{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-brand-icon{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1A1A1A,#444);display:flex;align-items:center;justify-content:center}
+.footer-brand-icon span{color:#fff;font-size:13px;font-weight:700}
+.footer-brand-text{font-weight:700;font-size:16px;color:var(--charcoal)}
+.footer-brand p{font-size:13.5px;color:var(--text-tertiary);line-height:1.65;max-width:280px}
+.footer-col h4{font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:16px}
+.footer-col a{display:block;font-size:13.5px;color:var(--text-tertiary);margin-bottom:10px;transition:all .3s var(--ease-out-expo)}
+.footer-col a:hover{color:var(--charcoal);transform:translateX(3px)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12.5px;color:var(--text-tertiary)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr;gap:24px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon"><span>V</span></div>
+      <span class="nav-brand-text">Vitryne</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#benefits">Fonctionnalités</a>
+      <a href="index.html#pricing">Tarifs</a>
+      <a href="index.html#how">Comment ça marche</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="btn-ghost">Connexion</a>
+      <a href="index.html#signup" class="btn-nav">Essayer gratuitement</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="legal-header">
+  <div class="container">
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Légal</div>
+    <h1>Conditions Générales de Vente</h1>
+    <p class="legal-header-meta">Dernière mise à jour : <strong>Janvier 2026</strong></p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="legal-layout">
+
+    <!-- TOC -->
+    <aside class="legal-toc">
+      <div class="legal-toc-title">Sommaire</div>
+      <nav class="legal-toc-list">
+        <a href="#champ">Champ d'application</a>
+        <a href="#offres">Offres et tarifs</a>
+        <a href="#commande">Commande et souscription</a>
+        <a href="#paiement">Modalités de paiement</a>
+        <a href="#facturation">Facturation</a>
+        <a href="#retractation">Droit de rétractation</a>
+        <a href="#resiliation">Résiliation</a>
+        <a href="#remboursement">Remboursement</a>
+        <a href="#responsabilite">Responsabilité</a>
+        <a href="#droit">Droit applicable</a>
+      </nav>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="legal-article">
+
+      <div class="legal-section" id="champ">
+        <h2><span class="section-num">1</span>Champ d'application</h2>
+        <p>Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les relations contractuelles entre <strong>Vitryne</strong> et tout professionnel (ci-après le « Prestataire ») souscrivant à un abonnement payant sur la Plateforme.</p>
+        <p>Les présentes CGV prévalent sur tout autre document du Prestataire, notamment ses propres conditions générales d'achat. Toute souscription à un abonnement Vitryne implique l'acceptation pleine et entière des présentes CGV.</p>
+        <div class="legal-info">
+          <span class="legal-info-icon">ℹ️</span>
+          <p>Les CGV s'appliquent aux abonnements souscrits par les Prestataires. Les Clients qui réservent via la vitrine d'un Prestataire sont soumis aux conditions propres à ce Prestataire.</p>
+        </div>
+      </div>
+
+      <div class="legal-section" id="offres">
+        <h2><span class="section-num">2</span>Offres et tarifs</h2>
+        <p>Vitryne propose plusieurs formules d'abonnement adaptées aux besoins des professionnels. Les tarifs en vigueur sont disponibles sur la page <a href="index.html#pricing">Tarifs</a> du site.</p>
+
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Formule</th>
+              <th>Prix mensuel TTC</th>
+              <th>Engagement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Démarrage</td>
+              <td><span class="placeholder">[ À compléter ]</span></td>
+              <td>Sans engagement</td>
+            </tr>
+            <tr>
+              <td>Pro</td>
+              <td><span class="placeholder">[ À compléter ]</span></td>
+              <td>Mensuel ou annuel</td>
+            </tr>
+            <tr>
+              <td>Business</td>
+              <td><span class="placeholder">[ À compléter ]</span></td>
+              <td>Mensuel ou annuel</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Tous les prix sont indiqués en euros et toutes taxes comprises (TTC). Vitryne se réserve le droit de modifier ses tarifs à tout moment. Les Prestataires sont prévenus de toute modification tarifaire par email au moins 30 jours avant son entrée en vigueur.</p>
+      </div>
+
+      <div class="legal-section" id="commande">
+        <h2><span class="section-num">3</span>Commande et souscription</h2>
+        <p>La souscription à un abonnement Vitryne s'effectue en ligne, depuis la page Tarifs ou lors de la création du compte. La commande est définitivement enregistrée après :</p>
+        <ul>
+          <li>Sélection de la formule souhaitée.</li>
+          <li>Renseignement des informations de paiement.</li>
+          <li>Acceptation des présentes CGV.</li>
+          <li>Confirmation du paiement par le prestataire de paiement.</li>
+        </ul>
+        <p>Un email de confirmation de commande est envoyé à l'adresse email du Prestataire dans les minutes suivant la souscription. Cet email récapitule les caractéristiques de l'abonnement souscrit.</p>
+        <h3>Période d'essai gratuit</h3>
+        <p>Vitryne peut proposer une période d'essai gratuit d'une durée de <span class="placeholder">[ durée en jours ]</span>. Aucun paiement n'est prélevé pendant cette période. À l'issue de l'essai, l'abonnement est automatiquement activé sauf résiliation avant le terme.</p>
+      </div>
+
+      <div class="legal-section" id="paiement">
+        <h2><span class="section-num">4</span>Modalités de paiement</h2>
+        <p>Le paiement s'effectue en ligne par carte bancaire (Visa, Mastercard, American Express) via notre prestataire de paiement sécurisé <span class="placeholder">[ Stripe / autre ]</span>. Les transactions sont sécurisées et cryptées (protocole TLS).</p>
+        <p>Pour les abonnements mensuels, le paiement est prélevé automatiquement chaque mois à la date anniversaire de la souscription. Pour les abonnements annuels, le paiement est prélevé une fois par an.</p>
+        <p>En cas d'échec de paiement, Vitryne se réserve le droit de suspendre l'accès au service après <span class="placeholder">[ X jours ]</span> de délai de grâce et après notification du Prestataire.</p>
+      </div>
+
+      <div class="legal-section" id="facturation">
+        <h2><span class="section-num">5</span>Facturation</h2>
+        <p>Une facture est générée automatiquement à chaque renouvellement de l'abonnement. Elle est disponible dans l'espace personnel du Prestataire, sous la rubrique « Facturation ».</p>
+        <p>La facture mentionne notamment :</p>
+        <ul>
+          <li>La dénomination sociale et les coordonnées de Vitryne.</li>
+          <li>Le numéro de TVA intracommunautaire de Vitryne.</li>
+          <li>Le détail des prestations facturées, le montant HT, la TVA applicable et le montant TTC.</li>
+          <li>Les informations de facturation du Prestataire.</li>
+        </ul>
+        <p>Le Prestataire est responsable de renseigner des informations de facturation exactes dans son espace personnel.</p>
+      </div>
+
+      <div class="legal-section" id="retractation">
+        <h2><span class="section-num">6</span>Droit de rétractation</h2>
+        <p>Conformément à l'article L.221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux services pleinement exécutés avant la fin du délai de rétractation et dont l'exécution a commencé avec l'accord du consommateur.</p>
+        <p>Toutefois, les Prestataires ayant souscrit à un abonnement sans période d'essai préalable disposent d'un délai de rétractation de <strong>14 jours calendaires</strong> à compter de la date de souscription, sous réserve que le service n'ait pas encore été utilisé.</p>
+        <p>Pour exercer ce droit, le Prestataire doit adresser une déclaration de rétractation non équivoque à <a href="mailto:contact@vitryne.fr">contact@vitryne.fr</a>.</p>
+      </div>
+
+      <div class="legal-section" id="resiliation">
+        <h2><span class="section-num">7</span>Résiliation de l'abonnement</h2>
+        <h3>Résiliation à l'initiative du Prestataire</h3>
+        <p>Le Prestataire peut résilier son abonnement à tout moment depuis son espace personnel, rubrique « Paramètres > Abonnement ». La résiliation prend effet à la fin de la période d'abonnement en cours.</p>
+        <p>Aucun remboursement n'est dû pour la période restante de l'abonnement, sauf dans les cas prévus à l'article 8.</p>
+        <h3>Résiliation à l'initiative de Vitryne</h3>
+        <p>Vitryne peut résilier un abonnement en cas de :</p>
+        <ul>
+          <li>Violation des CGU ou des CGV.</li>
+          <li>Utilisation frauduleuse du service.</li>
+          <li>Non-paiement persistant malgré relances.</li>
+        </ul>
+        <p>Dans ce cas, Vitryne notifie le Prestataire par email avec un préavis de <span class="placeholder">[ X jours ]</span>, sauf en cas de faute grave justifiant une résiliation immédiate.</p>
+      </div>
+
+      <div class="legal-section" id="remboursement">
+        <h2><span class="section-num">8</span>Politique de remboursement</h2>
+        <p>Vitryne ne procède en principe à aucun remboursement des abonnements souscrits, sauf dans les cas suivants :</p>
+        <ul>
+          <li>Exercice du droit de rétractation dans les conditions prévues à l'article 6.</li>
+          <li>Résiliation du contrat à l'initiative de Vitryne sans faute du Prestataire.</li>
+          <li>Interruption totale du service pendant une période supérieure à <span class="placeholder">[ X heures consécutives ]</span> causée par Vitryne.</li>
+          <li>Double facturation ou erreur de prélèvement constatée.</li>
+        </ul>
+        <p>Les demandes de remboursement doivent être adressées à <a href="mailto:billing@vitryne.fr">billing@vitryne.fr</a> dans un délai de 30 jours suivant l'événement justifiant le remboursement.</p>
+      </div>
+
+      <div class="legal-section" id="responsabilite">
+        <h2><span class="section-num">9</span>Responsabilité de Vitryne</h2>
+        <p>Vitryne s'engage à déployer tous les moyens raisonnables pour assurer la disponibilité et la sécurité de la Plateforme, sans toutefois s'engager à une obligation de résultat.</p>
+        <p>Vitryne ne saurait être tenu responsable des pertes de données, de revenus ou de tout dommage indirect découlant de l'utilisation ou de l'impossibilité d'utiliser la Plateforme.</p>
+        <p>La responsabilité totale de Vitryne, toutes causes confondues, ne pourra excéder les sommes effectivement versées par le Prestataire au cours des 12 derniers mois.</p>
+      </div>
+
+      <div class="legal-section" id="droit">
+        <h2><span class="section-num">10</span>Droit applicable et litiges</h2>
+        <p>Les présentes CGV sont soumises au droit français. En cas de litige portant sur leur interprétation ou leur exécution, les parties rechercheront en priorité une solution amiable.</p>
+        <p>À défaut d'accord amiable dans un délai de 30 jours, tout litige sera soumis à la compétence exclusive des tribunaux de <span class="placeholder">[ Ville du siège social ]</span>.</p>
+        <p>Pour les litiges avec des consommateurs, la plateforme européenne de résolution des litiges en ligne est accessible à l'adresse : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.</p>
+      </div>
+
+    </article>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <div class="footer-brand-icon"><span>V</span></div>
+          <span class="footer-brand-text">Vitryne</span>
+        </div>
+        <p>La plateforme de réservation et de pilotage pour les professionnels du service sur rendez-vous.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <a href="index.html#benefits">Fonctionnalités</a>
+        <a href="index.html#pricing">Tarifs</a>
+        <a href="index.html#how">Comment ça marche</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ressources</h4>
+        <a href="#">Guide de démarrage</a>
+        <a href="#">Centre d'aide</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="cgv.html">CGV</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vitryne. Tous droits réservés.</p>
+      <p>Hébergé en Europe 🇪🇺 · Conforme RGPD</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.legal-section[id]');
+const tocLinks = document.querySelectorAll('.legal-toc-list a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector('.legal-toc-list a[href="#' + entry.target.id + '"]');
+      if (link) link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

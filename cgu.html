@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales d'Utilisation — Vitryne</title>
+<meta name="description" content="Conditions Générales d'Utilisation de Vitryne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A1A1A'/%3E%3Cpath d='M8.5 8 L11 8 Q16 22.5 16 22.5 Q16 22.5 21 8 L23.5 8 L17.2 25.5 Q16 28.5 16 28.5 Q16 28.5 14.8 25.5 Z' fill='%23FDFCFA'/%3E%3Ccircle cx='16' cy='27' r='1.4' fill='%23B8976A'/%3E%3C/svg%3E">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --charcoal:#1A1A1A;--gold:#B8976A;--gold-light:#C9AB82;--gold-glow:rgba(184,151,106,0.2);
+  --cream:#FDFCFA;--white:#FFFFFF;--warm-bg:#F8F6F2;
+  --text-primary:#1A1A1A;--text-secondary:#666666;--text-tertiary:#999999;
+  --border:#E8E4DF;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;
+  --font-display:'Instrument Serif',Georgia,serif;--font-body:'DM Sans',sans-serif;
+  --ease-out-expo:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--text-primary);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;font-family:inherit;background:none}
+ul{list-style:none}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(253,252,250,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.05)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 24px;height:64px}
+.nav-brand{display:flex;align-items:center;gap:10px;transition:transform .3s var(--ease-out-expo)}
+.nav-brand:hover{transform:scale(1.03)}
+.nav-brand-icon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#1A1A1A,#444);display:flex;align-items:center;justify-content:center}
+.nav-brand-icon span{color:#fff;font-size:15px;font-weight:700}
+.nav-brand-text{font-weight:700;font-size:18px;color:var(--charcoal);letter-spacing:-.01em}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:#555;transition:color .25s}
+.nav-links a:hover{color:var(--charcoal)}
+.nav-right{display:flex;gap:10px;align-items:center}
+.btn-ghost{font-size:14px;font-weight:500;color:#555;padding:8px 16px;transition:color .25s}
+.btn-ghost:hover{color:var(--charcoal)}
+.btn-nav{font-size:13px;font-weight:600;color:#fff;background:var(--charcoal);padding:9px 20px;border-radius:var(--r-md);transition:all .3s var(--ease-out-expo)}
+.btn-nav:hover{background:#333;transform:translateY(-1px);box-shadow:0 4px 16px rgba(26,26,26,.2)}
+@media(max-width:768px){.nav-links{display:none}.btn-ghost{display:none}}
+
+/* PAGE HEADER */
+.legal-header{padding:120px 0 56px;background:var(--cream);border-bottom:1px solid var(--border)}
+.legal-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:5px 14px;font-size:12px;font-weight:600;color:var(--text-tertiary);letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
+.legal-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.legal-header h1{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--charcoal);margin-bottom:12px;letter-spacing:-.02em}
+.legal-header-meta{font-size:13.5px;color:var(--text-tertiary)}
+.legal-header-meta strong{color:var(--gold);font-weight:600}
+
+/* LAYOUT */
+.legal-layout{display:grid;grid-template-columns:240px 1fr;gap:64px;padding:64px 0 96px;align-items:start}
+@media(max-width:900px){.legal-layout{grid-template-columns:1fr;gap:32px}}
+
+/* TOC */
+.legal-toc{position:sticky;top:88px}
+.legal-toc-title{font-size:11px;font-weight:700;color:var(--text-tertiary);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.legal-toc-list{display:flex;flex-direction:column;gap:4px}
+.legal-toc-list a{font-size:13.5px;color:var(--text-secondary);padding:6px 12px;border-radius:var(--r-sm);transition:all .2s;border-left:2px solid transparent}
+.legal-toc-list a:hover{color:var(--charcoal);background:var(--warm-bg);border-left-color:var(--gold)}
+.legal-toc-list a.active{color:var(--charcoal);background:var(--warm-bg);border-left-color:var(--gold);font-weight:500}
+@media(max-width:900px){.legal-toc{position:static;background:var(--warm-bg);border-radius:var(--r-lg);padding:20px}}
+
+/* ARTICLE */
+.legal-article{min-width:0}
+.legal-section{margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid var(--border)}
+.legal-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.legal-section h2{font-family:var(--font-display);font-size:1.5rem;font-weight:400;color:var(--charcoal);margin-bottom:20px;letter-spacing:-.01em;display:flex;align-items:center;gap:12px}
+.legal-section h2 .section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:var(--warm-bg);border:1px solid var(--border);font-family:var(--font-body);font-size:12px;font-weight:600;color:var(--text-tertiary);flex-shrink:0}
+.legal-section h3{font-size:15px;font-weight:600;color:var(--charcoal);margin:24px 0 10px}
+.legal-section p{font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:14px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul{margin:10px 0 14px 0;display:flex;flex-direction:column;gap:8px}
+.legal-section ul li{font-size:15px;color:var(--text-secondary);line-height:1.7;padding-left:20px;position:relative}
+.legal-section ul li::before{content:'–';position:absolute;left:0;color:var(--gold)}
+.legal-section a{color:var(--charcoal);font-weight:500;border-bottom:1px solid var(--border);transition:border-color .2s}
+.legal-section a:hover{border-bottom-color:var(--charcoal)}
+.placeholder{background:var(--warm-bg);border:1px dashed var(--border);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:var(--text-tertiary);font-style:italic;display:block;margin:8px 0}
+
+/* INFO BOX */
+.legal-info{background:rgba(184,151,106,0.06);border:1px solid rgba(184,151,106,0.2);border-radius:var(--r-md);padding:16px 20px;margin:16px 0;display:flex;gap:12px;align-items:flex-start}
+.legal-info-icon{font-size:16px;flex-shrink:0;margin-top:2px}
+.legal-info p{margin:0;font-size:14px;color:var(--text-secondary);line-height:1.7}
+
+/* FOOTER */
+footer{background:var(--cream);border-top:1px solid var(--border);padding:48px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand-name{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-brand-icon{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1A1A1A,#444);display:flex;align-items:center;justify-content:center}
+.footer-brand-icon span{color:#fff;font-size:13px;font-weight:700}
+.footer-brand-text{font-weight:700;font-size:16px;color:var(--charcoal)}
+.footer-brand p{font-size:13.5px;color:var(--text-tertiary);line-height:1.65;max-width:280px}
+.footer-col h4{font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:16px}
+.footer-col a{display:block;font-size:13.5px;color:var(--text-tertiary);margin-bottom:10px;transition:all .3s var(--ease-out-expo)}
+.footer-col a:hover{color:var(--charcoal);transform:translateX(3px)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12.5px;color:var(--text-tertiary)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr;gap:24px}.footer-bottom{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon"><span>V</span></div>
+      <span class="nav-brand-text">Vitryne</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#benefits">Fonctionnalités</a>
+      <a href="index.html#pricing">Tarifs</a>
+      <a href="index.html#how">Comment ça marche</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="btn-ghost">Connexion</a>
+      <a href="index.html#signup" class="btn-nav">Essayer gratuitement</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="legal-header">
+  <div class="container">
+    <div class="legal-badge"><span class="legal-badge-dot"></span>Légal</div>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p class="legal-header-meta">Dernière mise à jour : <strong>Janvier 2026</strong></p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="legal-layout">
+
+    <!-- TOC -->
+    <aside class="legal-toc">
+      <div class="legal-toc-title">Sommaire</div>
+      <nav class="legal-toc-list">
+        <a href="#objet">Objet</a>
+        <a href="#definitions">Définitions</a>
+        <a href="#acces">Accès au service</a>
+        <a href="#compte">Création de compte</a>
+        <a href="#obligations">Obligations</a>
+        <a href="#contenu">Contenu utilisateur</a>
+        <a href="#propriete">Propriété intellectuelle</a>
+        <a href="#responsabilite">Responsabilité</a>
+        <a href="#suspension">Suspension & résiliation</a>
+        <a href="#modification">Modification des CGU</a>
+        <a href="#droit">Droit applicable</a>
+      </nav>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="legal-article">
+
+      <div class="legal-section" id="objet">
+        <h2><span class="section-num">1</span>Objet</h2>
+        <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles <strong>Vitryne</strong> met à disposition ses services aux utilisateurs, ainsi que la manière dont ces derniers accèdent au service et l'utilisent.</p>
+        <p>En accédant à la plateforme Vitryne et en créant un compte, l'utilisateur accepte sans réserve les présentes CGU. Si l'utilisateur n'accepte pas ces conditions, il doit s'abstenir d'utiliser le service.</p>
+        <div class="legal-info">
+          <span class="legal-info-icon">ℹ️</span>
+          <p>Ces CGU s'appliquent à tous les utilisateurs de la plateforme, qu'ils soient professionnels (Prestataires) ou clients finaux (Utilisateurs).</p>
+        </div>
+      </div>
+
+      <div class="legal-section" id="definitions">
+        <h2><span class="section-num">2</span>Définitions</h2>
+        <p>Dans les présentes CGU, les termes suivants ont la signification qui leur est donnée ci-dessous :</p>
+        <ul>
+          <li><strong>« Vitryne »</strong> désigne la société éditrice de la plateforme et ses services associés.</li>
+          <li><strong>« Plateforme »</strong> désigne le site web accessible à l'adresse vitryne.fr ainsi que toutes ses sous-pages et services.</li>
+          <li><strong>« Prestataire »</strong> désigne tout professionnel du service ayant créé un compte sur Vitryne afin de gérer ses rendez-vous et sa vitrine en ligne.</li>
+          <li><strong>« Client »</strong> désigne toute personne qui utilise la plateforme pour prendre rendez-vous auprès d'un Prestataire.</li>
+          <li><strong>« Compte »</strong> désigne l'espace personnel créé par un Prestataire après inscription sur la Plateforme.</li>
+          <li><strong>« Vitrine »</strong> désigne la page publique d'un Prestataire, accessible depuis un lien unique généré par Vitryne.</li>
+          <li><strong>« Contenu »</strong> désigne l'ensemble des informations, textes, images, données déposées par les utilisateurs sur la Plateforme.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section" id="acces">
+        <h2><span class="section-num">3</span>Accès au service</h2>
+        <p>La Plateforme est accessible en ligne à l'adresse <a href="https://vitryne.fr">vitryne.fr</a>, 24h/24 et 7j/7, sauf interruptions pour maintenance ou en cas de force majeure.</p>
+        <p>Vitryne se réserve le droit de modifier, interrompre ou fermer temporairement tout ou partie de l'accès à la Plateforme, notamment pour des opérations de maintenance, sans que cela engage sa responsabilité.</p>
+        <h3>Prérequis techniques</h3>
+        <p>L'accès à la Plateforme nécessite une connexion Internet et un navigateur web récent. Vitryne ne garantit pas la compatibilité avec des navigateurs obsolètes ou non maintenus.</p>
+      </div>
+
+      <div class="legal-section" id="compte">
+        <h2><span class="section-num">4</span>Création de compte</h2>
+        <p>Pour accéder aux fonctionnalités de la Plateforme en tant que Prestataire, l'utilisateur doit créer un compte en fournissant des informations exactes, complètes et à jour.</p>
+        <h3>Conditions d'inscription</h3>
+        <ul>
+          <li>Être une personne physique majeure ou une personne morale légalement constituée.</li>
+          <li>Exercer une activité professionnelle de service sur rendez-vous.</li>
+          <li>Fournir une adresse email valide et un mot de passe sécurisé.</li>
+          <li>Accepter les présentes CGU et la Politique de confidentialité.</li>
+        </ul>
+        <h3>Sécurité du compte</h3>
+        <p>L'utilisateur est seul responsable de la confidentialité de ses identifiants de connexion. Il s'engage à informer immédiatement Vitryne de toute utilisation non autorisée de son compte à l'adresse <a href="mailto:security@vitryne.fr">security@vitryne.fr</a>.</p>
+      </div>
+
+      <div class="legal-section" id="obligations">
+        <h2><span class="section-num">5</span>Obligations des utilisateurs</h2>
+        <p>En utilisant la Plateforme, l'utilisateur s'engage à :</p>
+        <ul>
+          <li>Respecter les lois et réglementations en vigueur, notamment en matière de droit du travail, protection des données et droit de la consommation.</li>
+          <li>Ne pas utiliser la Plateforme à des fins frauduleuses, illicites ou contraires aux présentes CGU.</li>
+          <li>Ne pas tenter d'accéder à des zones non autorisées de la Plateforme.</li>
+          <li>Ne pas introduire de virus, malwares ou tout code malveillant.</li>
+          <li>Ne pas perturber le bon fonctionnement de la Plateforme ou des serveurs.</li>
+          <li>Maintenir à jour ses informations personnelles et professionnelles.</li>
+        </ul>
+        <p>Tout manquement à ces obligations pourra entraîner la suspension ou la résiliation du compte.</p>
+      </div>
+
+      <div class="legal-section" id="contenu">
+        <h2><span class="section-num">6</span>Contenu utilisateur</h2>
+        <p>L'utilisateur est seul responsable du Contenu qu'il publie sur la Plateforme (textes, photos, descriptions de services, tarifs, etc.).</p>
+        <p>En publiant du Contenu sur la Plateforme, l'utilisateur accorde à Vitryne une licence non exclusive, mondiale et gratuite d'utiliser, reproduire et afficher ce Contenu dans le cadre du fonctionnement du service.</p>
+        <p>L'utilisateur s'engage à ne pas publier de contenu :</p>
+        <ul>
+          <li>Faux, trompeur ou susceptible d'induire en erreur les Clients.</li>
+          <li>Portant atteinte aux droits de tiers (propriété intellectuelle, vie privée).</li>
+          <li>Illicite, offensant, discriminatoire ou contraire aux bonnes mœurs.</li>
+          <li>Contenant des données personnelles de tiers sans leur consentement.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section" id="propriete">
+        <h2><span class="section-num">7</span>Propriété intellectuelle</h2>
+        <p>La Plateforme Vitryne, son design, son code source, ses fonctionnalités et tout le contenu éditorial sont protégés par le droit d'auteur et appartiennent exclusivement à Vitryne.</p>
+        <p>Toute reproduction, copie, adaptation ou utilisation commerciale sans autorisation écrite préalable de Vitryne est strictement interdite.</p>
+        <p>L'utilisation de la Plateforme ne confère à l'utilisateur aucun droit de propriété sur les éléments la constituant.</p>
+      </div>
+
+      <div class="legal-section" id="responsabilite">
+        <h2><span class="section-num">8</span>Limitation de responsabilité</h2>
+        <p>Vitryne est un prestataire technique qui met à disposition des outils de gestion de réservations. Vitryne n'est pas partie aux contrats conclus entre Prestataires et Clients.</p>
+        <p>Vitryne ne saurait être tenu responsable :</p>
+        <ul>
+          <li>Des préjudices directs ou indirects liés à l'utilisation ou à l'impossibilité d'utiliser la Plateforme.</li>
+          <li>Des inexactitudes ou omissions dans les informations publiées par les Prestataires.</li>
+          <li>Des litiges entre Prestataires et Clients concernant les services réservés.</li>
+          <li>Des interruptions de service dues à des causes extérieures (panne réseau, force majeure).</li>
+        </ul>
+        <p>La responsabilité de Vitryne, si elle venait à être engagée, ne pourra excéder le montant des sommes versées par le Prestataire au cours des 12 derniers mois.</p>
+      </div>
+
+      <div class="legal-section" id="suspension">
+        <h2><span class="section-num">9</span>Suspension et résiliation</h2>
+        <h3>Par l'utilisateur</h3>
+        <p>Le Prestataire peut résilier son compte à tout moment depuis les paramètres de son espace personnel ou en contactant <a href="mailto:contact@vitryne.fr">contact@vitryne.fr</a>. La résiliation prend effet à la fin de la période d'abonnement en cours.</p>
+        <h3>Par Vitryne</h3>
+        <p>Vitryne se réserve le droit de suspendre ou résilier un compte en cas de :</p>
+        <ul>
+          <li>Violation des présentes CGU.</li>
+          <li>Activité frauduleuse ou illicite.</li>
+          <li>Non-paiement des sommes dues.</li>
+          <li>Atteinte aux droits de tiers ou à l'image de Vitryne.</li>
+        </ul>
+        <p>En cas de résiliation, les données du compte seront supprimées conformément à la Politique de confidentialité.</p>
+      </div>
+
+      <div class="legal-section" id="modification">
+        <h2><span class="section-num">10</span>Modification des CGU</h2>
+        <p>Vitryne se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront informés de toute modification substantielle par email ou par une notification sur la Plateforme.</p>
+        <p>La poursuite de l'utilisation du service après notification des modifications vaut acceptation des nouvelles CGU. Si l'utilisateur n'accepte pas les nouvelles CGU, il doit cesser d'utiliser la Plateforme et peut résilier son compte.</p>
+      </div>
+
+      <div class="legal-section" id="droit">
+        <h2><span class="section-num">11</span>Droit applicable et litiges</h2>
+        <p>Les présentes CGU sont régies par le droit français. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, les parties s'efforceront de trouver une solution amiable.</p>
+        <p>À défaut d'accord amiable, tout litige sera soumis aux tribunaux compétents de <span class="placeholder">[ Ville du siège social ]</span>.</p>
+        <p>Conformément au Code de la consommation, les utilisateurs ayant la qualité de consommateurs peuvent recourir à la médiation en ligne via la plateforme européenne : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.</p>
+      </div>
+
+    </article>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <div class="footer-brand-icon"><span>V</span></div>
+          <span class="footer-brand-text">Vitryne</span>
+        </div>
+        <p>La plateforme de réservation et de pilotage pour les professionnels du service sur rendez-vous.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <a href="index.html#benefits">Fonctionnalités</a>
+        <a href="index.html#pricing">Tarifs</a>
+        <a href="index.html#how">Comment ça marche</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ressources</h4>
+        <a href="#">Guide de démarrage</a>
+        <a href="#">Centre d'aide</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="cgv.html">CGV</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vitryne. Tous droits réservés.</p>
+      <p>Hébergé en Europe 🇪🇺 · Conforme RGPD</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.legal-section[id]');
+const tocLinks = document.querySelectorAll('.legal-toc-list a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector('.legal-toc-list a[href="#' + entry.target.id + '"]');
+      if (link) link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
